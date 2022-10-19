@@ -2,23 +2,23 @@ menu:
   Index:
     url: /
     External: false
-    name: 首页
+    name: Home
   Tags:
     url: /tags
     External: false
-    name: 标签
+    name: Tags
 #  Categories:
 #    url: /categories
 #    External: false
-#    name: 分类
+#    name: Categories
   Archives:
     url: /archives
     External: false
-    name: 归档
+    name: Archives
   About:
     url: /about
     External: false
-    name: 关于
+    name: About
 
 # 深色主题
 dark_theme:
@@ -26,7 +26,7 @@ dark_theme:
 
 # 联系方式
 contact:
-  github: "https://github.com/f-dong"
+  github: "https://github.com/thuri10"
   twitter:
   weibo:
   zhihu:
