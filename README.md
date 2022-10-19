@@ -1,4 +1,4 @@
-# hexo 极简风格主题
+# hexo minimalist theme
 
 
 
@@ -7,83 +7,83 @@
 <a title="license"><img src="https://img.shields.io/badge/license-MIT-green"></a>
 </p>
 
-![预览图片](https://user-images.githubusercontent.com/40230452/189160566-c4f4070a-a64e-4843-81eb-7885c45f71c3.png)
+![Preview image](https://user-images.githubusercontent.com/40230452/189160566-c4f4070a-a64e-4843-81eb-7885c45f71c3.png)
 
-* [预览](#预览)
-* [特性](#特性)
-* [下载](#下载)
-* [配置](#配置)
-  * [切换主题](#切换主题)
-    * [\_config\.yml 文件的其它修改建议:](#_configyml-文件的其它修改建议)
-  * [新建标签 tags 页](#新建标签-tags-页)
-  * [新建关于我 about 页](#新建关于我-about-页)
-  * [新建标签 categories 页(可选的)](#新建标签-categories-页可选的)
-  * [菜单导航配置](#菜单导航配置)
-    * [配置基本菜单导航的名称、路径url和图标icon\.](#配置基本菜单导航的名称路径url和图标icon)
-  * [代码高亮](#代码高亮)
-  * [中文链接转拼音（建议安装）](#中文链接转拼音建议安装)
-  * [添加emoji表情支持（可选的）](#添加emoji表情支持可选的)
-  * [添加 RSS 订阅支持（可选的）](#添加-rss-订阅支持可选的)
-* [文章 Front\-matter 介绍](#文章-front-matter-介绍)
-  * [Front\-matter 选项详解](#front-matter-选项详解)
-  * [最简示例](#最简示例)
-  * [最全示例](#最全示例)
-* [效果截图](#效果截图)
+* [preview](#preview)
+* [feature](#feature)
+* [download](#download)
+* [config](#config)
+  * [Switch theme](#Switch theme)
+    * [Additional modification suggestion for \_config\.yml file:](#_configyml-other modification suggestion for file)
+  * [New tag tags page](#New tag-tags-page)
+  * [New about me about page](#New about me-about-page)
+  * [New label categories page (optional)](#New label-categories-page optional)
+  * [Menu Navigation Configuration](#Menu Navigation Configuration)
+    * [Configure the name, path url and icon icon of basic menu navigation\.](#Configure the name path url and icon icon of basic menu navigation)
+  * [Code highlighting](#Code highlighting)
+  * [Chinese link to Pinyin (recommended installation)](#Chinese link to Pinyin is recommended to be installed)
+  * [Add emoji support (optional)](#Add emoji support optional)
+  * [Add RSS subscription support (optional)](#add-rss-subscription support optional)
+* [Article Front\-matter introduction](#article-front-matter-introduction)
+  * [Detailed explanation of Front\-matter option](#front-matter-detailed explanation of option)
+  * [Simplest example](#Simplest example)
+  * [the most complete example] (#the most complete example)
+* [effect screenshot](#effect screenshot)
 * [License](#license)
 
 Table of contents generated with [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 [TODO list](./TODO.md)
 
-## 预览
+## preview
 
 - [codeover.cn](https://www.codeover.cn)
 
 
-## 特性
+## Features
 
-- 简洁大方, 文章内容美观易读
-- 响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现
-- 独特的分类归档页
-- [Gitalk](https://gitalk.github.io/) 评论模块支持, 集成了谷歌分析（`Google Analytics`）
-- 支持`emoji`表情，用`markdown emoji`语法书写直接生成对应的能**跳跃**的表情
-- 语义化标签, 更易于 SEO 优化, 提升博客价值
+- Concise and generous, the content of the article is beautiful and easy to read
+- Responsive design, blog can be well displayed on desktop, tablet, mobile phone and other devices
+- Unique categorized archive pages
+- [Gitalk](https://gitalk.github.io/) comment module support, integrated with Google Analytics (`Google Analytics`)
+- Support `emoji` expression, use `markdown emoji` syntax to directly generate the corresponding expression that can **jump**
+- Semantic tags, easier for SEO optimization, enhance blog value
 
 
 
-## 下载
+## download
 
-本主题**推荐你使用 Hexo 5.0.0 及以上的版本**。如果，你已经有一个自己的 [Hexo](https://hexo.io/zh-cn/) 博客了，建议你将 Hexo 升级到最新稳定的版本。
+This topic **recommends that you use Hexo 5.0.0 and above**. If you already have your own [Hexo](https://hexo.io/zh-cn/) blog, it is recommended that you upgrade Hexo to the latest stable version.
 
-点击 [这里](https://codeload.github.com/f-dong/hexo-theme-minimalism/zip/master) 下载 `master` 分支的最新稳定版的代码，解压缩后，将 `hexo-theme-minimalism` 的文件夹复制到你 Hexo 的 `themes` 文件夹中即可。
+Click [here](https://codeload.github.com/f-dong/hexo-theme-minimalism/zip/master) to download the latest stable code from the `master` branch, unzip it, and put the `hexo-theme Copy the -minimalism` folder to your Hexo's `themes` folder.
 
-当然你也可以在你的 `themes` 文件夹下使用 `git clone` 命令来下载:
+Of course you can also use the `git clone` command in your `themes` folder to download:
 
 ```bash
 git clone https://github.com/f-dong/hexo-theme-minimalism.git
 ```
 
-## 配置
+## configure
 
-### 切换主题
+### switch theme
 
-修改 Hexo 根目录下的 `_config.yml` 的  `theme` 的值：`theme: hexo-theme-minimalism`
+Modify the value of `theme` in `_config.yml` in the Hexo root directory: `theme: hexo-theme-minimalism`
 
-#### `_config.yml` 文件的其它修改建议:
+#### Other suggested changes to the `_config.yml` file:
 
-- 请修改 `_config.yml` 的 `url` 的值为你的网站主 `URL`（如：`http://xxx.github.io`）。
-- 建议修改两个 `per_page` 的分页条数值为 `6` 的倍数，如：`12`、`18` 等，这样文章列表在各个屏幕下都能较好的显示。
-- 建议修改 `language` 的值为 `zh-CN`, 否则部分浏览器将弹出翻译窗口
+- Please modify the value of `url` in `_config.yml` to the main `URL` of your website (eg: `http://xxx.github.io`).
+- It is recommended to modify the value of the two `per_page` paging bars to be multiples of `6`, such as: `12`, `18`, etc., so that the article list can be better displayed on each screen.
+- It is recommended to modify the value of `language` to `zh-CN`, otherwise some browsers will pop up a translation window
 
-### 新建标签 tags 页
+### Create new tags tags page
 
-tags 页是用来展示所有标签的页面, 如果在你的博客 source 目录下还没有 tags/index.md 文件, 那么你就需要新建一个, 命令如下: 
+The tags page is a page used to display all tags. If there is no tags/index.md file in your blog source directory, you need to create a new one. The command is as follows:
 
 ```bash
 hexo new page "tags"
 ```
 
-编辑你刚刚新建的页面文件 `/source/tags/index.md`，至少需要以下内容：
+Edit the page file you just created `/source/tags/index.md`, at least the following content is required:
 
 ```yaml
 ---
@@ -94,15 +94,15 @@ layout: "tags"
 ---
 ```
 
-### 新建关于我 about 页
+### Create a new about page about me
 
-`about` 页是用来展示**关于我和我的博客**信息的页面，如果在你的博客 `source` 目录下还没有 `about/index.md` 文件，那么你就需要新建一个，命令如下：
+The `about` page is a page used to display **about me and my blog** information. If there is no `about/index.md` file in the `source` directory of your blog, then you need to create a new one. The command is as follows:
 
 ```bash
 hexo new page "about"
 ```
 
-编辑你刚刚新建的页面文件 `/source/about/index.md`，至少需要以下内容：
+Edit the page file you just created `/source/about/index.md`, at least the following content is required:
 
 ```yaml
 ---
@@ -112,15 +112,15 @@ date: 2022-04-26 22:59:30
 ```
 
 
-### 新建标签 categories 页(可选的)
+### New tab categories page (optional)
 
-本主题内置了一个 `categories` 归档页, 用于显示分类下的所有文章, 如果在你的博客 `source` 目录下还没有 `tags/categories.md` 文件, 那么你就需要新建一个, 命令如下:
+This theme has a built-in `categories` archive page, which is used to display all articles under the category. If there is no `tags/categories.md` file in the `source` directory of your blog, then you need to create a new one, the command is as follows :
 
 ```bash
 hexo new page "categories"
 ```
 
-编辑你刚刚新建的页面文件 `/source/categories/index.md`, 至少需要以下内容: 
+Edit the page file you just created `/source/categories/index.md`, at least the following content is required:
 
 ```yaml
 ---
@@ -133,45 +133,45 @@ layout: "categories"
 
 
 
-### 菜单导航配置
+### Menu navigation configuration
 
-#### 配置基本菜单导航的名称、路径url和图标icon.
+#### Configure basic menu navigation name, path url and icon icon.
 
-1. 菜单导航名称可以是中文也可以是英文(如：`Index` 或 `主页`) 
-2. `External` 表示是否在新标签页打开连接
-3. 导航地址可以是站内地址也可以是外网地址
+1. Menu navigation name can be in Chinese or English (eg `Index` or `Home`)
+2. `External` indicates whether to open the connection in a new tab
+3. The navigation address can be an in-site address or an external network address
 
 ```yaml
 menu:
   Index:
     url: /
     External: false
-    name: 首页
+    name: Home
   Tags:
     url: /tags
     External: false
-    name: 标签
+    name: label
 #  Categories:
 #    url: /categories
 #    External: false
-#    name: 分类
+# name: Category
   Archives:
     url: /archives
     External: false
-    name: 归档
+    name: Archive
   About:
     url: /about
     External: false
-    name: 关于
+    name: about
 ```
 
-### 代码高亮
+### Code highlighting
 
-从 Hexo5.0 版本开始自带了 `prismjs` 代码语法高亮的支持，本主题对此进行了改造支持。
+Since version 5.0 of Hexo comes with `prismjs` code syntax highlighting support, this topic has been transformed to support it.
 
-如果你的博客中曾经安装过 `hexo-prism-plugin` 的插件，那么你须要执行 `npm uninstall hexo-prism-plugin` 来卸载掉它，否则生成的代码中会有 `&#123;` 和 `&#125;` 的转义字符。
+If you have installed the `hexo-prism-plugin` plugin in your blog, then you need to execute `npm uninstall hexo-prism-plugin` to uninstall it, otherwise the generated code will have `{` and Escape character for `}`.
 
-然后，修改 Hexo 根目录下 `_config.yml` 文件中 `highlight.enable` 的值为 `false`，并将 `prismjs.enable` 的值设置为 `true`，主要配置如下：
+Then, modify the value of `highlight.enable` in the `_config.yml` file in the Hexo root directory to `false`, and set the value of `prismjs.enable` to `true`, the main configuration is as follows:
 
 ```yaml
 highlight:
@@ -181,26 +181,26 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
-prismjs:
+prism:
   enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
 ```
 
-主题中默认的 `prismjs` 主题是 `Tomorrow Night`，如果你想定制自己的主题，可以前往 [prismjs 下载页面](https://prismjs.com/download.html) 定制下载自己喜欢的主题 `css` 文件，然后将此 css 主题文件取名为 `prism.css`，替换掉 `hexo-theme-minimalism` 主题文件夹中的 `source/style/prism.css` 文件即可。
+The default `prismjs` theme in the theme is `Tomorrow Night`, if you want to customize your own theme, you can go to the [prismjs download page](https://prismjs.com/download.html) Customize and download your favorite theme`css ` file, then name the css theme file `prism.css`, and replace the `source/style/prism.css` file in the `hexo-theme-minimalism` theme folder.
 
-### 中文链接转拼音（建议安装）
+### Chinese link to Pinyin (recommended installation)
 
-如果你的文章名称是中文的，那么 Hexo 默认生成的永久链接也会有中文，这样不利于 `SEO`。我们可以用 [hexo-permalink-pinyin](https://github.com/viko16/hexo-permalink-pinyin) Hexo 插件使在生成文章时生成中文拼音的永久链接。
+If your article name is in Chinese, the permalinks generated by Hexo by default will also be in Chinese, which is not good for `SEO`. We can use the [hexo-permalink-pinyin](https://github.com/viko16/hexo-permalink-pinyin) Hexo plugin to generate permalinks in Chinese pinyin when generating articles.
 
-安装命令如下：
+The installation command is as follows:
 
 ```bash
 npm i hexo-permalink-pinyin --save
 ```
 
-在 Hexo 根目录下的 `_config.yml` 文件中，新增以下的配置项：
+In the `_config.yml` file in the Hexo root directory, add the following configuration items:
 
 ```yaml
 permalink_pinyin:
@@ -208,17 +208,17 @@ permalink_pinyin:
   separator: '-' # default: '-'
 ```
 
-> **注**：除了此插件外，[hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink) 插件也可以生成非中文的链接。
+> **Note**: In addition to this plugin, the [hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink) plugin can also generate non-Chinese links.
 
-### 添加emoji表情支持（可选的）
+### Add emoji support (optional)
 
-本主题新增了对`emoji`表情的支持，使用到了 [hexo-filter-github-emojis](https://npm.taobao.org/package/hexo-filter-github-emojis) 的 Hexo 插件来支持 `emoji`表情的生成，把对应的`markdown emoji`语法（`::`,例如：`:smile:`）转变成会跳跃的`emoji`表情，安装命令如下：
+This topic adds support for `emoji`, using the Hexo plugin of [hexo-filter-github-emojis](https://npm.taobao.org/package/hexo-filter-github-emojis) To generate `emoji` expressions, convert the corresponding `markdown emoji` syntax (`::`, for example: `:smile:`) into `emoji` expressions that will jump. The installation command is as follows:
 
 ```bash
 npm install hexo-filter-github-emojis --save
 ```
 
-在 Hexo 根目录下的 `_config.yml` 文件中，新增以下的配置项：
+In the `_config.yml` file in the Hexo root directory, add the following configuration items:
 
 ```yaml
 githubEmojis:
@@ -228,17 +228,17 @@ githubEmojis:
   styles:
   customEmojis:
 ```
-执行 `hexo clean && hexo g` 重新生成博客文件，然后就可以在文章中对应位置看到你用`emoji`语法写的表情了。
+Execute `hexo clean && hexo g` to regenerate the blog file, and then you can see the emoji you wrote in `emoji` syntax in the corresponding position in the article.
 
-### 添加 RSS 订阅支持（可选的）
+### Add RSS feed support (optional)
 
-本主题中还使用到了 [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) 的 Hexo 插件来做 `RSS`，安装命令如下：
+This topic also uses the Hexo plugin of [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) to do `RSS`. The installation command is as follows:
 
 ```bash
 npm install hexo-generator-feed --save
 ```
 
-在 Hexo 根目录下的 `_config.yml` 文件中，新增以下的配置项：
+In the `_config.yml` file in the Hexo root directory, add the following configuration items:
 
 ```yaml
 feed:
@@ -252,56 +252,56 @@ feed:
   order_by: -date
 ```
 
-执行 `hexo clean && hexo g` 重新生成博客文件，然后在 `public` 文件夹中即可看到 `atom.xml` 文件，说明你已经安装成功了。
+Execute `hexo clean && hexo g` to regenerate the blog file, and then you can see the `atom.xml` file in the `public` folder, indicating that you have successfully installed.
 
-## 文章 Front-matter 介绍
+## Article Introduction to Front-matter
 
-### Front-matter 选项详解
+### Front-matter options detailed
 
-`Front-matter` 选项中的所有内容均为**非必填**的。但我仍然建议至少填写 `title` 和 `date` 的值。
+Everything in the `Front-matter` option is **optional**. But I still recommend filling in at least the `title` and `date` values.
 
-| 配置选项   | 默认值                     | 描述                                                         |
+| Configuration Options | Default Values ​​| Description |
 | ---------- | -------------------------- | ------------------------------------------------------------ |
-| title      | `Markdown` 的文件标题      | 文章标题，强烈建议填写此选项                                 |
-| date       | 文件创建时的日期时间       | 发布时间，强烈建议填写此选项，且最好保证全局唯一             |
-| img        | `featureImages` 中的某个值 | 文章特征图，推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如: `http://xxx.com/xxx.jpg` |
-| top        | `true`                     | 推荐文章（文章是否置顶），如果 `top` 值为 `true`，则会作为首页推荐文章 |
-| hide       | `false`                    | 隐藏文章，如果`hide`值为`true`，则文章不会在首页显示         |
-| cover      | `false`                    | `v1.0.2`版本新增，表示该文章是否需要加入到首页轮播封面中     |
-| toc        | `true`                     | 是否开启 TOC，可以针对某篇文章单独关闭 TOC 的功能。前提是在主题的 `config.yml` 中激活了 `toc` 选项 |
-| summary    | 无                         | 文章摘要，自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字 |
-| description    | 无                         | 用于搜索引擎的 description，如果没值则取 summary 或 截取文章内容 |
-| categories | 无                         | 文章分类，本主题的分类表示宏观上大的分类，只建议一篇文章一个分类 |
-| tags       | 无                         | 文章标签，一篇文章可以多个标签                               |
-| keywords   | 文章标题                   | 文章关键字，SEO 时需要                                       |
-| categories | 文章分类                   | 当前文章的所属分类 用户分类归档页                            |
-| tags       | 文章标签                   | 可以有多个                                                   |
+| title | `Markdown` file title | article title, this option is strongly recommended |
+| date | The date and time when the file was created | The release time, it is strongly recommended to fill in this option, and it is best to ensure that it is globally unique |
+| img | A value in `featureImages` | The feature map of the article, it is recommended to use the image bed (Tencent Cloud, Qiniu Cloud, Youpai Cloud, etc.) to make the path of the image. For example: `http://xxx.com/ xxx.jpg` |
+| top | `true` | Recommended articles (whether the article is on top), if the value of `top` is `true`, it will be used as the homepage recommended article |
+| hide | `false` | Hide the article, if the value of `hide` is `true`, the article will not be displayed on the homepage |
+| cover | `false` | Added in `v1.0.2`, indicating whether the article needs to be added to the cover of the homepage carousel |
+| toc | `true` | Whether to enable TOC, you can disable the TOC function for a certain article. Provided that the `toc` option is activated in the theme's `config.yml` |
+| summary | None | Article summary, custom article summary content, if this attribute has a value, the article card summary will display this text |
+| description | None | The description used for search engines, if there is no value, take the summary or intercept the content of the article |
+| categories | None | Article category, the category of this topic represents a macro category, only one category is recommended for one article |
+| tags | None | Article tags, an article can have multiple tags |
+| keywords | Article title | Article keywords, required for SEO |
+| categories | Article category | The current article's category user category archive page |
+| tags | article tags | can have multiple |
 
-以下为文章的 `Front-matter` 示例。
+The following is an example of a `Front-matter` for an article.
 
-### 最简示例
+### Minimal example
 
 ```yaml
 ---
-title: typora-vue-theme主题介绍
+title: Introduction to typora-vue-theme theme
 date: 2022-04-26 09:25:00
 ---
 ```
 
-### 最全示例
+### The most complete example
 
 ```yaml
 ---
-title: typora-vue-theme主题介绍
+title: Introduction to typora-vue-theme theme
 date: 2022-04-26 09:25:00
-author: 张三
+author: Zhang San
 img: /source/images/xxx.jpg
 top: true
 hide: false
 cover: true
 toc: false
-summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
-description: 该值主要用于 seo 优化，设置后页面 description 将显示该值，未设置则取 summary 或截取部分文章内容
+summary: This is your custom article summary content. If this attribute has a value, the article card summary will display this text, otherwise the program will automatically intercept part of the article as a summary
+description: This value is mainly used for seo optimization. After setting, the page description will display this value. If not set, take the summary or intercept part of the article content
 categories: Markdown
 tags:
   - Typora
@@ -310,4 +310,4 @@ tags:
 ```
 
 ## License
-MIT
+WITH
