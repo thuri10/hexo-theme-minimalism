@@ -20,7 +20,7 @@ if (window.is_post) {
     });
 
     // 代码复制
-    var $copyIcon = $('<i class="fa-solid icon icon-copy copy-code" title="复制代码"></i>');
+    var $copyIcon = $('<i class="fa-solid icon icon-copy copy-code" title="copy code"></i>');
     $(".post-detail figure").append($copyIcon);
     $(".post-detail pre[class*=language-].line-numbers").append($copyIcon);
     $('.post-detail .copy-code').on('click', function () {
@@ -40,7 +40,7 @@ if (window.is_post) {
         document.execCommand('copy');
         selection.removeAllRanges();
 
-        $(this).html('<span class="copy-success"> 复制成功</span>');
+        $(this).html('<span class="copy-success"> copy successful</span>');
         setTimeout(() => {
             $(this).html('');
         }, 2500)
@@ -101,7 +101,7 @@ if (window.is_post) {
     $(".top-box-link").click(function(){
         setTimeout(function () {
             $(window).scrollTop($(window).scrollTop() - 54);
-            console.log($(window).scrollTop() - 54, '滚动条位置');
+            console.log($(window).scrollTop() - 54, 'scroll var position');
         }, 0);
     });
 }

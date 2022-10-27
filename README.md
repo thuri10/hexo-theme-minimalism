@@ -1,7 +1,5 @@
 # hexo minimalist theme
 
-
-
 <p align="center">
 <a herf="https://hexo.io"><img src="https://img.shields.io/badge/hexo-%3E%3D%205.0.0-blue.svg"></a>
 <a title="license"><img src="https://img.shields.io/badge/license-MIT-green"></a>
@@ -9,27 +7,27 @@
 
 ![Preview image](https://user-images.githubusercontent.com/40230452/189160566-c4f4070a-a64e-4843-81eb-7885c45f71c3.png)
 
-* [preview](#preview)
-* [feature](#feature)
-* [download](#download)
-* [config](#config)
-  * [Switch theme](#Switch theme)
-    * [Additional modification suggestion for \_config\.yml file:](#_configyml-other modification suggestion for file)
-  * [New tag tags page](#New tag-tags-page)
-  * [New about me about page](#New about me-about-page)
-  * [New label categories page (optional)](#New label-categories-page optional)
-  * [Menu Navigation Configuration](#Menu Navigation Configuration)
-    * [Configure the name, path url and icon icon of basic menu navigation\.](#Configure the name path url and icon icon of basic menu navigation)
-  * [Code highlighting](#Code highlighting)
-  * [Chinese link to Pinyin (recommended installation)](#Chinese link to Pinyin is recommended to be installed)
-  * [Add emoji support (optional)](#Add emoji support optional)
-  * [Add RSS subscription support (optional)](#add-rss-subscription support optional)
-* [Article Front\-matter introduction](#article-front-matter-introduction)
-  * [Detailed explanation of Front\-matter option](#front-matter-detailed explanation of option)
-  * [Simplest example](#Simplest example)
-  * [the most complete example] (#the most complete example)
-* [effect screenshot](#effect screenshot)
-* [License](#license)
+- [preview](#preview)
+- [feature](#feature)
+- [download](#download)
+- [config](#config)
+- [Switch theme](#Switch theme)
+- [Additional modification suggestion for \_config\.yml file:](#\_configyml-other modification suggestion for file)
+- [New tag tags page](#New tag-tags-page)
+- [New about me about page](#New about me-about-page)
+- [New label categories page (optional)](#New label-categories-page optional)
+- [Menu Navigation Configuration](#Menu Navigation Configuration)
+- [Configure the name, path url and icon icon of basic menu navigation\.](#Configure the name path url and icon icon of basic menu navigation)
+- [Code highlighting](#Code highlighting)
+- [Chinese link to Pinyin (recommended installation)](#Chinese link to Pinyin is recommended to be installed)
+- [Add emoji support (optional)](#Add emoji support optional)
+- [Add RSS subscription support (optional)](#add-rss-subscription support optional)
+- [Article Front\-matter introduction](#article-front-matter-introduction)
+- [Detailed explanation of Front\-matter option](#front-matter-detailed explanation of option)
+- [Simplest example](#Simplest example)
+- [the most complete example] (#the most complete example)
+- [effect screenshot](#effect screenshot)
+- [License](#license)
 
 Table of contents generated with [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
@@ -39,7 +37,6 @@ Table of contents generated with [gh-md-toc](https://github.com/ekalinin/github-
 
 - [codeover.cn](https://www.codeover.cn)
 
-
 ## Features
 
 - Concise and generous, the content of the article is beautiful and easy to read
@@ -48,8 +45,6 @@ Table of contents generated with [gh-md-toc](https://github.com/ekalinin/github-
 - [Gitalk](https://gitalk.github.io/) comment module support, integrated with Google Analytics (`Google Analytics`)
 - Support `emoji` expression, use `markdown emoji` syntax to directly generate the corresponding expression that can **jump**
 - Semantic tags, easier for SEO optimization, enhance blog value
-
-
 
 ## download
 
@@ -111,7 +106,6 @@ date: 2022-04-26 22:59:30
 ---
 ```
 
-
 ### New tab categories page (optional)
 
 This theme has a built-in `categories` archive page, which is used to display all articles under the category. If there is no `tags/categories.md` file in the `source` directory of your blog, then you need to create a new one, the command is as follows :
@@ -131,8 +125,6 @@ layout: "categories"
 ---
 ```
 
-
-
 ### Menu navigation configuration
 
 #### Configure basic menu navigation name, path url and icon icon.
@@ -147,14 +139,14 @@ menu:
     url: /
     External: false
     name: Home
-  Tags:
-    url: /tags
-    External: false
-    name: label
-#  Categories:
-#    url: /categories
-#    External: false
-# name: Category
+  # Tags:
+  #   url: /tags
+  #   External: false
+  #   name: label
+  #  Categories:
+  #    url: /categories
+  #    External: false
+  # name: Category
   Archives:
     url: /archives
     External: false
@@ -178,14 +170,14 @@ highlight:
   enable: false
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: false
 prism:
   enable: true
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace: ""
 ```
 
 The default `prismjs` theme in the theme is `Tomorrow Night`, if you want to customize your own theme, you can go to the [prismjs download page](https://prismjs.com/download.html) Customize and download your favorite theme`css ` file, then name the css theme file `prism.css`, and replace the `source/style/prism.css` file in the `hexo-theme-minimalism` theme folder.
@@ -205,7 +197,7 @@ In the `_config.yml` file in the Hexo root directory, add the following configur
 ```yaml
 permalink_pinyin:
   enable: true
-  separator: '-' # default: '-'
+  separator: "-" # default: '-'
 ```
 
 > **Note**: In addition to this plugin, the [hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink) plugin can also generate non-Chinese links.
@@ -228,6 +220,7 @@ githubEmojis:
   styles:
   customEmojis:
 ```
+
 Execute `hexo clean && hexo g` to regenerate the blog file, and then you can see the emoji you wrote in `emoji` syntax in the corresponding position in the article.
 
 ### Add RSS feed support (optional)
@@ -248,7 +241,7 @@ feed:
   hub:
   content:
   content_limit: 140
-  content_limit_delim: ' '
+  content_limit_delim: " "
   order_by: -date
 ```
 
@@ -260,22 +253,22 @@ Execute `hexo clean && hexo g` to regenerate the blog file, and then you can see
 
 Everything in the `Front-matter` option is **optional**. But I still recommend filling in at least the `title` and `date` values.
 
-| Configuration Options | Default Values ​​| Description |
-| ---------- | -------------------------- | ------------------------------------------------------------ |
-| title | `Markdown` file title | article title, this option is strongly recommended |
-| date | The date and time when the file was created | The release time, it is strongly recommended to fill in this option, and it is best to ensure that it is globally unique |
-| img | A value in `featureImages` | The feature map of the article, it is recommended to use the image bed (Tencent Cloud, Qiniu Cloud, Youpai Cloud, etc.) to make the path of the image. For example: `http://xxx.com/ xxx.jpg` |
-| top | `true` | Recommended articles (whether the article is on top), if the value of `top` is `true`, it will be used as the homepage recommended article |
-| hide | `false` | Hide the article, if the value of `hide` is `true`, the article will not be displayed on the homepage |
-| cover | `false` | Added in `v1.0.2`, indicating whether the article needs to be added to the cover of the homepage carousel |
-| toc | `true` | Whether to enable TOC, you can disable the TOC function for a certain article. Provided that the `toc` option is activated in the theme's `config.yml` |
-| summary | None | Article summary, custom article summary content, if this attribute has a value, the article card summary will display this text |
-| description | None | The description used for search engines, if there is no value, take the summary or intercept the content of the article |
-| categories | None | Article category, the category of this topic represents a macro category, only one category is recommended for one article |
-| tags | None | Article tags, an article can have multiple tags |
-| keywords | Article title | Article keywords, required for SEO |
-| categories | Article category | The current article's category user category archive page |
-| tags | article tags | can have multiple |
+| Configuration Options | Default Values ​​                           | Description                                                                                                                                                                                   |
+| --------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| title                 | `Markdown` file title                       | article title, this option is strongly recommended                                                                                                                                            |
+| date                  | The date and time when the file was created | The release time, it is strongly recommended to fill in this option, and it is best to ensure that it is globally unique                                                                      |
+| img                   | A value in `featureImages`                  | The feature map of the article, it is recommended to use the image bed (Tencent Cloud, Qiniu Cloud, Youpai Cloud, etc.) to make the path of the image. For example: `http://xxx.com/ xxx.jpg` |
+| top                   | `true`                                      | Recommended articles (whether the article is on top), if the value of `top` is `true`, it will be used as the homepage recommended article                                                    |
+| hide                  | `false`                                     | Hide the article, if the value of `hide` is `true`, the article will not be displayed on the homepage                                                                                         |
+| cover                 | `false`                                     | Added in `v1.0.2`, indicating whether the article needs to be added to the cover of the homepage carousel                                                                                     |
+| toc                   | `true`                                      | Whether to enable TOC, you can disable the TOC function for a certain article. Provided that the `toc` option is activated in the theme's `config.yml`                                        |
+| summary               | None                                        | Article summary, custom article summary content, if this attribute has a value, the article card summary will display this text                                                               |
+| description           | None                                        | The description used for search engines, if there is no value, take the summary or intercept the content of the article                                                                       |
+| categories            | None                                        | Article category, the category of this topic represents a macro category, only one category is recommended for one article                                                                    |
+| tags                  | None                                        | Article tags, an article can have multiple tags                                                                                                                                               |
+| keywords              | Article title                               | Article keywords, required for SEO                                                                                                                                                            |
+| categories            | Article category                            | The current article's category user category archive page                                                                                                                                     |
+| tags                  | article tags                                | can have multiple                                                                                                                                                                             |
 
 The following is an example of a `Front-matter` for an article.
 
@@ -310,4 +303,5 @@ tags:
 ```
 
 ## License
+
 WITH
