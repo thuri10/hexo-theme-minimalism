@@ -20,7 +20,7 @@ if (window.is_post) {
     });
 
     // 代码复制
-    var $copyIcon = $('<i class="fa-solid icon icon-copy copy-code" title="copy code"></i>');
+    var $copyIcon = $('<i class="fa-solid icon icon-copy copy-code" title="copy"></i>');
     $(".post-detail figure").append($copyIcon);
     $(".post-detail pre[class*=language-].line-numbers").append($copyIcon);
     $('.post-detail .copy-code').on('click', function () {
@@ -40,7 +40,7 @@ if (window.is_post) {
         document.execCommand('copy');
         selection.removeAllRanges();
 
-        $(this).html('<span class="copy-success"> copy successful</span>');
+        $(this).html('<span class="copy-success"> copied!!</span>');
         setTimeout(() => {
             $(this).html('');
         }, 2500)
