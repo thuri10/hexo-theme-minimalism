@@ -7,10 +7,10 @@ menu:
   #   url: /tags
   #   External: false
   #   name: Tags
-#  Categories:
-#    url: /categories
-#    External: false
-#    name: Categories
+  #  Categories:
+  #    url: /categories
+  #    External: false
+  #    name: Categories
   Archives:
     url: /archives
     External: false
@@ -27,7 +27,7 @@ dark_theme:
 # 联系方式
 contact:
   github: "https://github.com/thuri10"
-  twitter:
+  twitter: "https://twitter.com/thuri0"
   weibo:
   zhihu:
   facebook:
@@ -52,7 +52,7 @@ gitalk:
   clientSecret:
   repository: # 仓库名
   owner: # 仓库所有者
-  createIssueManually: false # 如果当前页面没有相应的 isssue 且登录的用户属于 admin，则会自动创建 issue。如果设置为 true，则显示一个初始化页面，创建 issue 需要点击 init 按钮。
+  createIssueManually: false, # 如果当前页面没有相应的 isssue 且登录的用户属于 admin，则会自动创建 issue。如果设置为 true，则显示一个初始化页面，创建 issue 需要点击 init 按钮。
 
 # 是否使用 bootcdn
 use_bootcdn: false
