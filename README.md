@@ -7,27 +7,27 @@
 
 ![Preview image](https://user-images.githubusercontent.com/40230452/189160566-c4f4070a-a64e-4843-81eb-7885c45f71c3.png)
 
-- [preview](#preview)
-- [feature](#feature)
-- [download](#download)
-- [config](#config)
-- [Switch theme](#Switch theme)
-- [Additional modification suggestion for \_config\.yml file:](#\_configyml-other modification suggestion for file)
-- [New tag tags page](#New tag-tags-page)
-- [New about me about page](#New about me-about-page)
-- [New label categories page (optional)](#New label-categories-page optional)
-- [Menu Navigation Configuration](#Menu Navigation Configuration)
-- [Configure the name, path url and icon icon of basic menu navigation\.](#Configure the name path url and icon icon of basic menu navigation)
-- [Code highlighting](#Code highlighting)
-- [Chinese link to Pinyin (recommended installation)](#Chinese link to Pinyin is recommended to be installed)
-- [Add emoji support (optional)](#Add emoji support optional)
-- [Add RSS subscription support (optional)](#add-rss-subscription support optional)
-- [Article Front\-matter introduction](#article-front-matter-introduction)
-- [Detailed explanation of Front\-matter option](#front-matter-detailed explanation of option)
-- [Simplest example](#Simplest example)
-- [the most complete example] (#the most complete example)
-- [effect screenshot](#effect screenshot)
-- [License](#license)
+- [hexo minimalist theme](#hexo-minimalist-theme)
+  - [preview](#preview)
+  - [Features](#features)
+  - [download](#download)
+  - [configure](#configure)
+    - [Switch theme](#switch-theme)
+      - [Other suggested changes to the `_config.yml` file:](#other-suggested-changes-to-the-_configyml-file)
+    - [Create new tags tags page](#create-new-tags-tags-page)
+    - [Create a new about page about me](#create-a-new-about-page-about-me)
+    - [New tab categories page (optional)](#new-tab-categories-page-optional)
+    - [Menu navigation configuration](#menu-navigation-configuration)
+      - [Configure basic menu navigation name, path url and icon icon.](#configure-basic-menu-navigation-name-path-url-and-icon-icon)
+    - [Code highlighting](#code-highlighting)
+    - [Chinese link to Pinyin (recommended installation)](#chinese-link-to-pinyin-recommended-installation)
+    - [Add emoji support (optional)](#add-emoji-support-optional)
+    - [Add RSS feed support (optional)](#add-rss-feed-support-optional)
+  - [Article Introduction to Front-matter](#article-introduction-to-front-matter)
+    - [Front-matter options detailed](#front-matter-options-detailed)
+    - [Minimal example](#minimal-example)
+    - [The most complete example](#the-most-complete-example)
+  - [License](#license)
 
 Table of contents generated with [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
@@ -60,7 +60,7 @@ git clone https://github.com/f-dong/hexo-theme-minimalism.git
 
 ## configure
 
-### switch theme
+### Switch theme
 
 Modify the value of `theme` in `_config.yml` in the Hexo root directory: `theme: hexo-theme-minimalism`
 
