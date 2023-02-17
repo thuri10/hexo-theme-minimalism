@@ -7,36 +7,33 @@
 
 ![Preview image](https://user-images.githubusercontent.com/40230452/189160566-c4f4070a-a64e-4843-81eb-7885c45f71c3.png)
 
-- [Preview](#preview)
-- [Feature](#feature)
-- [Download](#download)
-- [Config](#config)
-- [Switch theme](#Switch-theme)
-- [Additional modification suggestion for \_config\.yml file:](#\_configyml-other-modification-suggestion-for-file)
-- [New tag tags page](#New-tag-tags-page)
-- [New about me about page](#New-about-me-about-page)
-- [New label categories page (optional)](#New-label-categories-page-optional)
-- [Menu Navigation Configuration](#Menu-Navigation-Configuration)
-- [Configure the name, path url and icon icon of basic menu navigation\.](#Configure-the-name-path-url-and-icon-of-basic-menu-navigation)
-- [Code highlighting](#Code-highlighting)
-- [Chinese link to Pinyin (recommended installation)](#Chinese-link-to-Pinyin-is-recommended-to-be-installed)
-- [Add emoji support (optional)](#Add-emoji-support-optional)
-- [Add RSS subscription support (optional)](#add-rss-subscription-support-optional)
+- [preview](#preview)
+- [feature](#feature)
+- [download](#download)
+- [config](#config)
+- [Switch theme](#Switch theme)
+- [Additional modification suggestion for \_config\.yml file:](#\_configyml-other modification suggestion for file)
+- [New tag tags page](#New tag-tags-page)
+- [New about me about page](#New about me-about-page)
+- [New label categories page (optional)](#New label-categories-page optional)
+- [Menu Navigation Configuration](#Menu Navigation Configuration)
+- [Configure the name, path url and icon icon of basic menu navigation\.](#Configure the name path url and icon icon of basic menu navigation)
+- [Code highlighting](#Code highlighting)
+- [Chinese link to Pinyin (recommended installation)](#Chinese link to Pinyin is recommended to be installed)
+- [Add emoji support (optional)](#Add emoji support optional)
+- [Add RSS subscription support (optional)](#add-rss-subscription support optional)
 - [Article Front\-matter introduction](#article-front-matter-introduction)
-- [Detailed explanation of Front\-matter option](#front-matter-detailed-explanation-of-option)
-- [Simplest example](#Simplest-example)
-- [The most complete example](#The-most-complete-example)
-- [Effect screenshot](#effect-screenshot)
+- [Detailed explanation of Front\-matter option](#front-matter-detailed explanation of option)
+- [Simplest example](#Simplest example)
+- [the most complete example] (#the most complete example)
+- [effect screenshot](#effect screenshot)
 - [License](#license)
-- [Credits](#credits)
 
 Table of contents generated with [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 [TODO list](./TODO.md)
 
 ## preview
-
-Live preview of `hexo-theme-minimalism` theme.
 
 - [codeover.cn](https://www.codeover.cn)
 
@@ -46,8 +43,8 @@ Live preview of `hexo-theme-minimalism` theme.
 - Responsive design, blog can be well displayed on desktop, tablet, mobile phone and other devices
 - Unique categorized archive pages
 - [Gitalk](https://gitalk.github.io/) comment module support, integrated with Google Analytics (`Google Analytics`)
-- Support `emoji` expression, through use of `markdown emoji` 
-- Semantic tags, easier for SEO optimization.
+- Support `emoji` expression, use `markdown emoji` syntax to directly generate the corresponding expression that can **jump**
+- Semantic tags, easier for SEO optimization, enhance blog value
 
 ## download
 
@@ -142,14 +139,14 @@ menu:
     url: /
     External: false
     name: Home
-  Tags:
-    url: /tags
-    External: false
-    name: label
-   Categories:
-     url: /categories
-     External: false
-  name: Category
+  # Tags:
+  #   url: /tags
+  #   External: false
+  #   name: label
+  #  Categories:
+  #    url: /categories
+  #    External: false
+  # name: Category
   Archives:
     url: /archives
     External: false
@@ -183,11 +180,7 @@ prism:
   tab_replace: ""
 ```
 
-The default `prismjs` theme in the theme is `Tomorrow Night`, for customization of the theme;
-1. Go to the [prismjs download page](https://prismjs.com/download.html)
-2. Customize and download your favorite theme`css ` file
-3. Then name the css theme file `prism.css`
-4. Replace the `source/style/prism.css` file in the `hexo-theme-minimalism` theme folder.
+The default `prismjs` theme in the theme is `Tomorrow Night`, if you want to customize your own theme, you can go to the [prismjs download page](https://prismjs.com/download.html) Customize and download your favorite theme`css ` file, then name the css theme file `prism.css`, and replace the `source/style/prism.css` file in the `hexo-theme-minimalism` theme folder.
 
 ### Chinese link to Pinyin (recommended installation)
 
@@ -232,7 +225,7 @@ Execute `hexo clean && hexo g` to regenerate the blog file, and then you can see
 
 ### Add RSS feed support (optional)
 
-This topic also uses the Hexo plugin of [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) for `RSS`. The installation command is as follows:
+This topic also uses the Hexo plugin of [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) to do `RSS`. The installation command is as follows:
 
 ```bash
 npm install hexo-generator-feed --save
@@ -280,7 +273,6 @@ Everything in the `Front-matter` option is **optional**. But I still recommend f
 The following is an example of a `Front-matter` for an article.
 
 ### Minimal example
-These are minimal front-matter content required in a blog post.
 
 ```yaml
 ---
@@ -290,8 +282,6 @@ date: 2022-04-26 09:25:00
 ```
 
 ### The most complete example
-
-This is a complete example Front-matter of a single blog page.
 
 ```yaml
 ---
@@ -315,10 +305,3 @@ tags:
 ## License
 
 WITH
-
-
-## credits
-
-All the credits and ownership of theme belongs to the original Author [f-dong](https://github.com/f-dong).
-
-This is a fork of my own customizations of colors schemes.

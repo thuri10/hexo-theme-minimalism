@@ -1,0 +1,29 @@
+{
+  "name": "hexo-theme-minimalism",
+  "version": "1.0.0",
+  "description": "<p align=\"center\"> <a herf=\"https://hexo.io\"><img src=\"https://img.shields.io/badge/hexo-%3E%3D%205.0.0-blue.svg\"></a> <a title=\"license\"><img src=\"https://img.shields.io/badge/license-MIT-green\"></a> </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thuri10/hexo-theme-minimalism.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thuri10/hexo-theme-minimalism/issues"
+  },
+  "homepage": "https://github.com/thuri10/hexo-theme-minimalism#readme",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "2.8.4"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
